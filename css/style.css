@@ -13,12 +13,27 @@ header {
 
 .logo {
   max-width: 100px;
+  display: inline-block;
+}
+
+.contribute {
+  display: inline-block;
+  position: absolute;
+  right: 3px;
+  top: 25px
 }
 
 .jumbotron {
   width: 100%;
+  margin-bottom: -5px;
+}
+.jumbotron img {
+  width: 100%;
 }
 
+.down-arrow {
+  display: none;
+}
 
 /*Main Content Styles*/
 .container {
@@ -28,20 +43,27 @@ header {
 }
 
 .wrapper {
-  margin-top: 40px;
+  margin: 0 auto;
   padding: 5px;
+  padding-top: 45px;
+  max-width: 1200px;
 }
 
 .family-photo {
   border-top: 5px solid #b22128;
+  width: 100%;
+}
+.family-photo img {
+  width: 100%;
 }
 
 .quote {
   background-color: rgba(193, 33, 40, 0.9);
   border-radius: 5px;
   padding: 5px;
+  margin-bottom: 20px;
 }
-.quote p {
+.quote h3 {
   margin: 0;
   text-align: center;
   color: white;
@@ -53,6 +75,10 @@ header {
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 50px;
+}
+
+.logos {
+  display: none;
 }
 
 /*Footer*/
@@ -69,16 +95,85 @@ footer {
 
 footer a {
   color: white;
+  text-decoration: none;
+}
+
+.f-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .contact {
   text-align: left;
   padding-left: 5px;
+  display: inline-block;
+  width: 70%;
+  margin: 0;
+}
+
+.contact h4 {
+  color: #c22128;
+
+}
+
+.social {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  padding-right: 5px;
+  width: 25%;
+  margin: 0;
+  top: -7px;
 }
 
 .legal {
   text-align: center;
   font-size: .75em;
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+@media (min-width: 960px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  .contribute {
+    position: fixed;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .family {
+    display: flex;
+  }
+  .family-photo {
+    width: 40%;
+    border-top: 5px solid #c22128;
+    display: inline-block;
+    height: auto;
+  }
+  .family-text {
+    width: 57%;
+    padding-left: 30px;
+    display: inline-block;
+    border-top: 5px solid #c22128;
+  }
+  .logos {
+    display: block;
+    text-align: center;
+  }
+  .logos img {
+    max-width: 150px;
+  }
+
+  .accomplishments h2 {
+    text-align: center;
+  }
+
 }
